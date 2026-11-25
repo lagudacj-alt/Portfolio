@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio — Building Digital Experiences</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg"></div><canvas id="fx" aria-hidden="true"></canvas>
+
+<nav aria-label="Main">
+<a href="#home" class="on">HOME</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#projects">PROJECTS</a><a href="#contact">CONTACT</a>
+</nav>
+
+<main>
+<section id="home">
+<div>
+<div class="status"><b></b>AVAILABLE FOR PROJECTS</div>
+<h1>BUILDING DIGITAL EXPERIENCES.</h1>
+<p class="lead">Hi, I’m <strong>[CJ]</strong>, an IT student and aspiring web developer passionate about technology and creative solutions.</p>
+<div class="btns"><a class="btn fill" href="#projects">EXPLORE MY WORK</a><a class="btn ghost" href="#contact">GET IN TOUCH</a></div>
+</div>
+<div class="frame" aria-label="Profile image placeholder">
+<div class="ring r2"></div><div class="ring"></div><div class="ring r3"></div>
+<div class="avatar"><img src="photo (1).jpg" alt="Your Name"></div>
+</div>
+<div class="scroll">SCROLL<span></span></div>
+</section>
+
+<section id="about">
+<div class="sec-head rv"><h2>ABOUT ME</h2><p>The person behind the code.</p><i></i></div>
+<div class="about">
+<div class="rv">
+<p>I’m a <strong>BSIT student</strong> who enjoys turning ideas into working software. What started as curiosity about how websites are made has grown into a steady habit of building, breaking, and rebuilding things until they work well.</p>
+<p>I like clean interfaces, reliable back ends, and the small details that make a product feel considered. I’m looking for projects and teams where I can contribute and keep learning.</p>
+<div class="chips"><span>Programming</span><span>Web Development</span><span>Databases</span><span>Technology</span></div>
+</div>
+<div class="glass info rv"><h3>PROFILE</h3>
+<dl><dt>Name</dt><dd>[CJ LAGUDA]</dd><dt>Course</dt><dd>BS Information Technology</dd><dt>Focus</dt><dd>Web Development</dd><dt>Location</dt><dd>Philippines</dd><dt>Status</dt><dd>Open to projects</dd></dl></div>
+<div class="glass journey rv"><h3>MY JOURNEY</h3>
+<div class="tl">
+<div><b>FIRST LINE OF CODE</b><small>Started with HTML and CSS</small></div>
+<div><b>ENTERED BSIT</b><small>Programming and database fundamentals</small></div>
+<div><b>FIRST PROJECTS</b><small>Python and Django apps</small></div>
+<div><b>NOW</b><small>Building a portfolio and seeking work</small></div>
+</div></div>
+</div>
+</section>
+
+<section id="skills">
+<div class="sec-head rv"><h2>TECHNICAL SKILLS</h2><p>Tools I use to design, build, and ship.</p><i></i></div>
+<div class="skills" id="skillGrid"></div>
+</section>
+
+<section id="projects">
+<div class="sec-head rv"><h2>PROJECTS</h2><p>Sample placeholders. Replace the text and links with your own work.</p><i></i></div>
+<div class="projects">
+<article class="glass proj rv"><div class="pbody"><h3>Qr-attendance System</h3><p>A QR Code-Based Attendance System that automates student attendance through QR code scanning using a webcam. It records attendance digitally, reduces manual work, and provides real-time scanning feedback.</p><div class="tech"><span>Python</span></div><div class="links"><a href="https://github.com/lagudacj-alt/Qr-attendanceSystem" target="_blank" rel="noopener">GitHub repo</a></div></div></article>
+<article class="glass proj rv"><div class="pbody"><h3>Motorcycle Mnagement System</h3><p>A Motorcycle Management System designed to manage motorcycle records, brands, inventory, and stock information efficiently. It allows administrators to add, update, delete, and monitor motorcycle details through a user-friendly interface.</p><div class="tech"><span>Python</span><span>Django</span><span>PostgreSQL</span></div><div class="links"><a href="https://github.com/lagudacj-alt/finalproject" target="_blank" rel="noopener">GitHub repo</a></div></div></article>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div class="rv">
+<h2>LET’S BUILD SOMETHING GREAT.</h2>
+<p>Have a project, an internship, or just a question? Send a message and I’ll reply soon.</p>
+<a class="glass clink" href="mailto:lagudacj@gmail.com.com"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg><div><small>Email</small></div></a>
+<a class="glass clink" href="https://github.com/lagudacj-alt" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2m12 4v-3.5c0-1 .1-1.400-.5-2 3-.3 6-1.500 6-6.500a5 5 0 0 0-1.400-3.500 4.600 4.600 0 0 0-.1-3.500s-1.100-.3-3.500 1.300a12 12 0 0 0-6.200 0C6.800 2.800 5.700 3.100 5.700 3.100a4.600 4.600 0 0 0-.1 3.500A5 5 0 0 0 4.200 10c0 5 3 6.200 6 6.500-.6.600-.6 1.200-.5 2V21"/></svg><div><small>GitHub</small></div></a>
+<a class="glass clink" href="https://www.facebook.com/shroudy.12" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg><div><small>Facebook</small></div></a>
+</div>
+<form class="glass rv" id="form" novalidate>
+<div><label for="n">Name</label><input id="n" required autocomplete="name"></div>
+<div><label for="e">Email</label><input id="e" type="email" required autocomplete="email"></div>
+<div><label for="m">Message</label><textarea id="m" required></textarea></div>
+<button class="btn fill send" type="submit"><span id="sl">SEND MESSAGE</span></button>
+<div class="note" id="note" role="status"></div>
+</form>
+</div>
+</section>
+</main>
+<footer>© <span id="yr"></span> [CJ LAGUDA]. Designed and built with HTML, CSS, and JavaScript.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
